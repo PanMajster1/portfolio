@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patryk Nawrocki | Portfolio</title>
+    <meta name="description"
+        content="Portfolio Patryka Nawrockiego - aplikacje webowe (Goldtrack) i projekty hardware (Hulajnoga 10kW VESC).">
+
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- Tło "Antigravity/AI Glow" -->
+    <div class="background-glow">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Nawigacja -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#projects">Projekty</a></li>
+                <li><a href="#skills">Umiejętności</a></li>
+                <li><a href="#contact" class="btn-sm">Kontakt</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Sekcja Hero -->
+        <section id="hero" class="hero-section hidden-element">
+            <div class="hero-content">
+                <div class="badge">Dostępny do współpracy</div>
+                <h1 class="hero-title">
+                    Cześć, jestem <br />
+                    <span class="gradient-text type-text">Patryk Nawrocki</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Łączę światy oprogramowania (software) i elektroniki (hardware). Buduję aplikacje webowe oraz
+                    projektuję i rozwijam potężne pojazdy elektryczne (EV).
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">Zobacz moje prace</a>
+                    <a href="#contact" class="btn btn-secondary">Skontaktuj się</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sekcja O mnie -->
+        <section id="about" class="about-section hidden-element">
+            <div class="section-header">
+                <h2>O <span class="gradient-text">mnie</span></h2>
+            </div>
+            <div class="about-content grid-2-col">
+                <div class="about-image-card">
+                    <div class="image-placeholder">
+                        <span class="gradient-text" style="font-size: 4rem; font-weight: 700;">PN</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Kim jestem?</h3>
+                    <p>
+                        Jestem pasjonatem programowania i elektroniki. Z jednej strony tworzę własne aplikacje webowe, w
+                        tym systemy takie jak Goldtrack, zajmujące się gromadzeniem i śledzeniem danych.
+                    </p>
+                    <p>
+                        Z drugiej strony, w świecie rzeczywistym zajmuję się inżynierią sprzętową – samodzielnie buduję
+                        zaawansowane pojazdy elektryczne, zgrzewam customowe pakiety bateryjne i konfiguruję
+                        skomplikowane systemy sterowania VESC.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h4 class="gradient-text">WebApp</h4>
+                            <p>Fullstack Dev</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4 class="gradient-text">EV</h4>
+                            <p>Hardware & VESC</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sekcja Projekty -->
+        <section id="projects" class="projects-section hidden-element">
+            <div class="section-header text-center">
+                <h2>Wybrane <span class="gradient-text">Projekty</span></h2>
+                <p class="section-subtitle">Oto kilka z moich najlepszych realizacji. Każdy projekt to inne wyzwanie i
+                    rozwiązanie.</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Projekt 1 -->
+                <div class="project-card">
+                    <div class="project-image clickable-image"
+                        style="background: url('./images/goldtrack.png') top center/cover no-repeat; cursor: pointer;"
+                        data-full-image="./images/goldtrack.png">
+                        <h2 class="gradient-text"
+                            style="font-size: 2.5rem; margin:0; position: relative; z-index: 2; text-shadow: 0 4px 10px rgba(0,0,0,0.8); pointer-events: none;">
+                            Goldtrack</h2>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Web App</span>
+                            <span class="tag">Backend</span>
+                            <span class="tag">Frontend</span>
+                        </div>
+                        <h3>Aplikacja Goldtrack</h3>
+                        <p>Autorska aplikacja webowa służąca do śledzenia cen złota w czasie rzeczywistym. Pełny system
+                            z panelem logowania, obsługujący bazę danych i integracje.</p>
+                        <a href="https://goldtrack.nawrockinet.pl" target="_blank" class="project-link">Odwiedź stronę
+                            &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Projekt 2 -->
+                <div class="project-card">
+                    <div class="project-image clickable-image"
+                        style="background: url('./images/vesc.png') center/cover no-repeat; cursor: pointer;"
+                        data-full-image="./images/vesc.png ">
+                        <h2 class="gradient-text"
+                            style="font-size: 2.5rem; margin:0; position: relative; z-index: 2; text-shadow: 0 4px 10px rgba(0,0,0,0.8); pointer-events: none;">
+                            10kW VESC</h2>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Hardware</span>
+                            <span class="tag">VESC</span>
+                            <span class="tag">Custom Battery</span>
+                            <span class="tag">EV</span>
+                        </div>
+                        <h3>Hulajnoga elektryczna 10kW</h3>
+                        <p>Zaawansowany projekt sprzętowy. Zbudowana od podstaw bardzo mocna hulajnoga elektryczna (10
+                            000W). Oparta o zaawansowany kontroler VESC i zbudowaną przeze mnie customową baterię
+                            dostosowaną do potężnych obciążeń.</p>
+                        <a href="#contact" class="project-link">Zapytaj o detale &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Projekt 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <h2 class="gradient-text" style="font-size: 2.5rem; margin:0;">Kolejne Wyzwania</h2>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Innovation</span>
+                            <span class="tag">Tech</span>
+                        </div>
+                        <h3>W trakcie pracy...</h3>
+                        <p>Stale poszerzam swoje horyzonty sprzętowe oraz software'owe, ucząc się nowych ram pracy i
+                            konstruując nowe maszyny oraz mikrokontrolerowe ulepszenia.</p>
+                        <a href="#github" class="project-link">Sprawdź więcej &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sekcja Kontakt -->
+        <section id="contact" class="contact-section hidden-element">
+            <div class="contact-container glass-panel">
+                <div class="contact-info">
+                    <h2>Porozmawiajmy o <br /><span class="gradient-text">Twoim pomyśle</span></h2>
+                    <p>Zawsze jestem otwarty na nowe wyzwania. Zostaw wiadomość, a odezwę się tak szybko, jak to
+                        możliwe.</p>
+
+                    <div class="contact-methods">
+                        <div class="method">
+                            <div class="method-icon">📧</div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:patrykxnawrocki@gmail.com"
+                                    class="hover-underline">patrykxnawrocki@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="method">
+                            <div class="method-icon">💼</div>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="#" class="hover-underline">linkedin.com/in/twojprofil</a>
+                            </div>
+                        </div>
+                        <div class="method">
+                            <div class="method-icon">💻</div>
+                            <div>
+                                <h4>GitHub</h4>
+                                <a href="#" class="hover-underline">github.com/twojprofil</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Imię i nazwisko</label>
+                            <input type="text" id="name" placeholder="Jan Kowalski" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Adres Email</label>
+                            <input type="email" id="email" placeholder="jan@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Wiadomość</label>
+                            <textarea id="message" rows="4" placeholder="Opisz swój projekt lub pytanie..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Wyślij wiadomość</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">PORT<span class="gradient-text">FOLIO</span>.</div>
+            <p>&copy; <span id="year"></span> Patryk Nawrocki. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="image-lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Powiększone zdjęcie projektu">
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
