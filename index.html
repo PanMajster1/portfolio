@@ -3,201 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patryk Nawrocki | Portfolio</title>
-    <meta name="description" content="Portfolio Patryka Nawrockiego - aplikacje webowe (Goldtrack), projekty hardware (Hulajnoga 10kW VESC) i mechanika (Yamaha Aerox).">
+    <title>Patryk Nawrocki | Dev & Hardware</title>
+    <meta name="description" content="Portfolio Patryka Nawrockiego - aplikacje webowe (Goldtrack), projekty hardware i mechanika.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div class="background-glow">
-        <div class="glow-orb orb-1"></div>
-        <div class="glow-orb orb-2"></div>
-        <div class="glow-orb orb-3"></div>
-    </div>
-
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
 
     <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">PN.</a>
-            <ul class="nav-links">
-                <li><a href="#about">O mnie</a></li>
-                <li><a href="#projects">Projekty</a></li>
-                <li><a href="#contact" class="btn-sm">Kontakt</a></li>
-            </ul>
-        </div>
+        <div class="nav-brand">PN_DEV</div>
+        <ul class="nav-links">
+            <li><a href="#about">// O MNIE</a></li>
+            <li><a href="#projects">// PROJEKTY</a></li>
+            <li><a href="#contact" class="nav-cta">KONTAKT</a></li>
+        </ul>
     </nav>
 
+    <div class="bg-grid"></div>
+
     <main>
-        <section id="hero" class="hero-section hidden-element">
+        <section id="hero" class="hero fade-in">
             <div class="hero-content">
-                <div class="badge">Dostępny do współpracy</div>
-                <h1 class="hero-title">
-                    Cześć, jestem <br />
-                    <span class="gradient-text type-text">Patryk Nawrocki</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Łączę światy oprogramowania (software), elektroniki (hardware) i mechaniki. Buduję aplikacje webowe, potężne pojazdy elektryczne (EV) oraz projekty tuningowe.
+                <span class="status-badge">● DOSTĘPNY DO WSPÓŁPRACY</span>
+                <h1 class="hero-title">PATRYK<br>NAWROCKI</h1>
+                <p class="hero-desc">
+                    Software Engineer & Hardware Builder. Projektuję aplikacje webowe, buduję potężne pojazdy elektryczne i tworzę bezkompromisowe projekty mechaniczne.
                 </p>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">Zobacz moje prace</a>
-                    <a href="#contact" class="btn btn-secondary">Skontaktuj się</a>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">ZOBACZ PROJEKTY</a>
+                    <a href="https://github.com/PanMajster1" target="_blank" class="btn btn-outline">GITHUB ↗</a>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="about-section hidden-element">
-            <div class="section-header">
-                <h2>O <span class="gradient-text">mnie</span></h2>
+        <section id="about" class="about fade-in">
+            <div class="section-title">
+                <h2>01. O MNIE</h2>
             </div>
-            <div class="about-content grid-2-col">
-                <div class="about-image-card">
-                    <div class="image-placeholder">
-                        <span class="gradient-text logo-large">PN</span>
-                    </div>
-                </div>
+            <div class="about-grid">
                 <div class="about-text">
-                    <h3>Kim jestem?</h3>
-                    <p>
-                        Jestem pasjonatem programowania, elektroniki i mechaniki. Z jednej strony tworzę własne aplikacje webowe, w tym systemy takie jak Goldtrack, zajmujące się gromadzeniem i śledzeniem danych.
-                    </p>
-                    <p>
-                        Z drugiej strony, w świecie rzeczywistym zajmuję się inżynierią sprzętową – samodzielnie buduję zaawansowane pojazdy elektryczne, zgrzewam customowe pakiety bateryjne, konfiguruję skomplikowane systemy sterowania VESC i realizuję zaawansowane projekty mechaniczne.
-                    </p>
-                    <div class="stats-grid">
-                        <div class="stat-card glass-panel">
-                            <h4 class="gradient-text">WebApp</h4>
-                            <p>Fullstack Dev</p>
-                        </div>
-                        <div class="stat-card glass-panel">
-                            <h4 class="gradient-text">EV & Mech</h4>
-                            <p>Hardware & Tuning</p>
-                        </div>
+                    <p>Jestem twórcą, który nie ogranicza się tylko do pisania kodu. Tworzę kompletne aplikacje fullstack (jak systemy analityczne), ale równie dobrze czuję się w warsztacie.</p>
+                    <p>Zajmuję się inżynierią sprzętową: projektuję customowe pakiety bateryjne, programuję kontrolery VESC i buduję pojazdy o ogromnej mocy. Łączę logiczne myślenie programisty z pragmatyzmem mechanika.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <span class="stat-icon">💻</span>
+                        <h4>SOFTWARE</h4>
+                        <p>Web Apps, Frontend, Backend, Bazy Danych</p>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-icon">🔧</span>
+                        <h4>HARDWARE</h4>
+                        <p>Elektronika, VESC, Baterie, Mechanika</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="projects-section hidden-element">
-            <div class="section-header text-center">
-                <h2>Wybrane <span class="gradient-text">Projekty</span></h2>
-                <p class="section-subtitle">Oto kilka z moich najlepszych realizacji. Każdy projekt to inne wyzwanie, od kodu po czystą mechanikę.</p>
+        <section id="projects" class="projects fade-in">
+            <div class="section-title">
+                <h2>02. PROJEKTY</h2>
             </div>
-
-            <div class="projects-grid">
-                <article class="project-card glass-panel">
-                    <div class="project-image-wrapper clickable-image" data-full-image="./images/goldtrack.png">
-                        <img src="./images/goldtrack.png" alt="Zrzut ekranu aplikacji Goldtrack" class="project-image">
+            
+            <div class="project-list">
+                
+                <article class="project-item">
+                    <div class="project-img-box clickable-image" data-full="./images/goldtrack.png">
+                        <img src="./images/goldtrack.png" alt="Aplikacja Goldtrack" onerror="this.src='https://via.placeholder.com/800x500/111/00ff66?text=GOLDTRACK'">
+                        <div class="img-overlay">KLIKNIJ ABY POWIĘKSZYĆ</div>
                     </div>
                     <div class="project-info">
-                        <div class="project-tags">
-                            <span class="tag">Web App</span>
-                            <span class="tag">Backend</span>
-                            <span class="tag">Frontend</span>
+                        <div class="tech-stack">
+                            <span>WEB_APP</span>
+                            <span>FULLSTACK</span>
                         </div>
-                        <h3>Aplikacja Goldtrack</h3>
-                        <p>Autorska aplikacja webowa służąca do śledzenia cen złota w czasie rzeczywistym. Pełny system z panelem logowania, obsługujący bazę danych i integracje.</p>
-                        <a href="https://goldtrack.nawrockinet.pl" target="_blank" class="project-link">Odwiedź stronę &rarr;</a>
+                        <h3>GOLDTRACK</h3>
+                        <p>Autorska aplikacja webowa do śledzenia cen złota w czasie rzeczywistym. System posiada bezpieczny panel logowania, integrację z zewnętrznymi API oraz obsługę relacyjnej bazy danych.</p>
+                        <a href="https://goldtrack.nawrockinet.pl" target="_blank" class="project-link">URUCHOM APLIKACJĘ ↗</a>
                     </div>
                 </article>
 
-                <article class="project-card glass-panel">
-                    <div class="project-image-wrapper clickable-image" data-full-image="./images/vesc.PNG">
-                        <img src="./images/vesc.PNG" alt="Zdjęcie hulajnogi 10kW" class="project-image">
+                <article class="project-item">
+                    <div class="project-img-box clickable-image" data-full="./images/vesc.PNG">
+                        <img src="./images/vesc.PNG" alt="Hulajnoga 10kW" onerror="this.src='https://via.placeholder.com/800x500/111/00ff66?text=10KW+VESC'">
+                        <div class="img-overlay">KLIKNIJ ABY POWIĘKSZYĆ</div>
                     </div>
                     <div class="project-info">
-                        <div class="project-tags">
-                            <span class="tag">Hardware</span>
-                            <span class="tag">VESC</span>
-                            <span class="tag">Custom Battery</span>
+                        <div class="tech-stack">
+                            <span>HARDWARE</span>
+                            <span>VESC</span>
+                            <span>CUSTOM_BATTERY</span>
                         </div>
-                        <h3>Hulajnoga elektryczna 10kW</h3>
-                        <p>Zaawansowany projekt sprzętowy. Zbudowana od podstaw potężna hulajnoga elektryczna oparta o kontroler VESC i customową baterię dostosowaną do ekstremalnych obciążeń.</p>
-                        <a href="#contact" class="project-link">Zapytaj o detale &rarr;</a>
+                        <h3>HULAJNOGA EV 10kW</h3>
+                        <p>Zbudowana od podstaw bestia. Potężny pojazd elektryczny napędzany kontrolerem VESC. Zaprojektowałem i zgrzałem do niego customową baterię, aby wytrzymała ekstremalne obciążenia rzędu 10 000 W.</p>
+                        <a href="#contact" class="project-link">ZAPYTAJ O DETALE ↗</a>
                     </div>
                 </article>
 
-                <article class="project-card glass-panel">
-                    <div class="project-image-wrapper clickable-image" data-full-image="./images/aerox.jpg">
-                        <div style="width: 100%; height: 100%; background: #111; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--border-glass);">
-                            <h2 class="gradient-text" style="font-size: 1.8rem; margin:0; letter-spacing: 2px;">WIP: AEROX</h2>
-                        </div>
+                <article class="project-item">
+                    <div class="project-img-box clickable-image" data-full="./images/aerox.jpg">
+                        <img src="./images/aerox.jpg" alt="Yamaha Aerox" onerror="this.src='https://via.placeholder.com/800x500/111/00ff66?text=YAMAHA+AEROX'">
+                        <div class="img-overlay">KLIKNIJ ABY POWIĘKSZYĆ</div>
                     </div>
                     <div class="project-info">
-                        <div class="project-tags">
-                            <span class="tag">Hardware</span>
-                            <span class="tag">Mechanics</span>
-                            <span class="tag">Tuning</span>
+                        <div class="tech-stack">
+                            <span>MECHANICS</span>
+                            <span>TUNING</span>
+                            <span>ENGINEERING</span>
                         </div>
-                        <h3>Yamaha Aerox 70cc</h3>
-                        <p>Kompleksowy projekt budowy i tuningu mechanicznego. Setup oparty m.in. na cylindrze Malossi MHR Testarossa ~70cc, wale Top Performance i gaźniku 28PWK. Całość napędu i dolotu to pełen pakiet Stage 6 (wario, sprzęgło, dzwon, filtr).</p>
-                        <a href="https://github.com/PanMajster1" class="project-link" target="_blank">Projekt w budowie ⚙️</a>
+                        <h3>YAMAHA AEROX 70cc</h3>
+                        <p>Kompleksowy projekt tuningu mechanicznego. Setup oparty na cylindrze Malossi MHR Testarossa, wale Top Performance oraz gaźniku 28PWK. Napęd i dolot to pełen pakiet od Stage 6 (wario, sprzęgło, dzwon, filtr).</p>
+                        <a href="https://github.com/PanMajster1" target="_blank" class="project-link">ZOBACZ DOKUMENTACJĘ ↗</a>
                     </div>
                 </article>
+
             </div>
         </section>
 
-        <section id="contact" class="contact-section hidden-element">
-            <div class="contact-container glass-panel">
-                <div class="contact-info">
-                    <h2>Porozmawiajmy o <br /><span class="gradient-text">Twoim pomyśle</span></h2>
-                    <p>Zawsze jestem otwarty na nowe wyzwania. Zostaw wiadomość, a odezwę się tak szybko, jak to możliwe.</p>
-                    
-                    <div class="contact-methods">
-                        <div class="method">
-                            <div class="method-icon">📧</div>
-                            <div>
-                                <h4>Email</h4>
-                                <a href="mailto:patrykxnawrocki@gmail.com" class="hover-underline">patrykxnawrocki@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="method">
-                            <div class="method-icon">💻</div>
-                            <div>
-                                <h4>GitHub</h4>
-                                <a href="https://github.com/PanMajster1" target="_blank" class="hover-underline">github.com/PanMajster1</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" onsubmit="event.preventDefault();">
-                        <div class="form-group">
-                            <label for="name">Imię i nazwisko</label>
-                            <input type="text" id="name" placeholder="Jan Kowalski" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Adres Email</label>
-                            <input type="email" id="email" placeholder="jan@example.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Wiadomość</label>
-                            <textarea id="message" rows="4" placeholder="Opisz swój projekt lub zadaj pytanie..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Wyślij wiadomość</button>
-                    </form>
+        <section id="contact" class="contact fade-in">
+            <div class="section-title">
+                <h2>03. KONTAKT</h2>
+            </div>
+            <div class="contact-box">
+                <h2>ZACZNIJMY WSPÓŁPRACĘ</h2>
+                <p>Masz pomysł na aplikację webową, potrzebujesz wsparcia przy projekcie EV, albo po prostu chcesz pogadać o kodzie i sprzęcie? Daj znać.</p>
+                <div class="contact-links">
+                    <a href="mailto:patrykxnawrocki@gmail.com" class="btn btn-primary">NAPISZ EMAIL</a>
+                    <a href="https://github.com/PanMajster1" target="_blank" class="btn btn-outline">MÓJ GITHUB</a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div class="logo">PN.</div>
-            <p>&copy; <span id="year"></span> Patryk Nawrocki. Wszelkie prawa zastrzeżone.</p>
-        </div>
+        <p>&copy; 2026 PATRYK NAWROCKI // SYSTEM OFFLINE</p>
     </footer>
 
-    <div id="image-lightbox" class="lightbox">
-        <span class="lightbox-close">&times;</span>
-        <div class="lightbox-content">
-            <img id="lightbox-img" src="" alt="Powiększone zdjęcie">
-        </div>
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <img id="lightbox-img" src="" alt="Pełny ekran">
     </div>
 
     <script src="./js/app.js"></script>
